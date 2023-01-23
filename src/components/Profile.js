@@ -104,7 +104,7 @@ function Profile() {
             {data.map((e) => {
               return (
                 <tr key={e.id}>
-                  <td>{e.empno}</td>
+                  <td>{e.id}</td>
                  
                   <td>
                     <img src={e.photo} alt={"profilepic"} />
