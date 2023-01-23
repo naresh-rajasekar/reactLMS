@@ -4,7 +4,7 @@ import { useState } from "react";
 import Table from "react-bootstrap/Table";
 import { useEffect } from "react";
 import Button from "react-bootstrap/Button";
-import Link from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 
 function AllUsers() {
@@ -74,7 +74,7 @@ function AllUsers() {
                 <tr key={e.id}>
                   <td>{e.id}</td>
                   <td>
-                    <img src={e.photo} />
+                    <img src={e.photo} alt="profilepic" />
                   </td>
                   <td>{e.ename}</td>
                   <td>{e.mobile}</td>
