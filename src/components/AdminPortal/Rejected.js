@@ -1,13 +1,13 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
+
 import Table from "react-bootstrap/Table";
-import { useNavigate } from "react-router-dom";
+
 
 function Rejected() {
   let [status, setStatus] = useState([]);
-  let navigate = useNavigate();
+
 
   async function showStatus() {
     let response = await axios.get(
@@ -53,7 +53,7 @@ function Rejected() {
                   <td>{e.pl}</td>
                   <td>{e.reason}</td>
                   <td>
-                    {" "}
+                    
                     {e.isPending ? (
                       <b>Pending</b>
                     ) : e.isApproved ? (

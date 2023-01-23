@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import moment from "moment";
+
 
 function AskLeave() {
   let navigate = useNavigate();
@@ -31,10 +31,11 @@ function AskLeave() {
     let userArr = newArr.filter((e) => e.username === username);
     let takepl = userArr.filter((e) => e.isApproved === true);
     let getPl;
-    let mapPl = takepl.map((e) => {
+    takepl.map((e) => {
       if (e.isApproved === true) {
         getPl = e.pl;
         updatePl(getPl);
+        return getPl
       }
     });
   }
