@@ -5,7 +5,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import AskLeave from './components/AskLeave';
 import Profile from './components/Profile';
-import SideBar from './components/AdminPortal/SideBar';
+
 import AllUsers from './components/AdminPortal/AllUsers';
 import './App.css'
 import Pending from './components/AdminPortal/Pending';

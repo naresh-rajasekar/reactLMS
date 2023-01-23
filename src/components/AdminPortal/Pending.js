@@ -3,11 +3,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import { useNavigate } from "react-router-dom";
+
 
 function Pending() {
   let [status, setStatus] = useState([]);
-  let navigate = useNavigate();
+  
 
   async function showStatus() {
     let response = await axios.get(

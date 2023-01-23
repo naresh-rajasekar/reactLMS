@@ -31,11 +31,11 @@ function AskLeave() {
     let userArr = newArr.filter((e) => e.username === username);
     let takepl = userArr.filter((e) => e.isApproved === true);
     let getPl;
-    takepl.map((e) => {
+ takepl.map((e) => {
       if (e.isApproved === true) {
         getPl = e.pl;
         updatePl(getPl);
-        return getPl
+       
       }
     });
   }

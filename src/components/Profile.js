@@ -107,7 +107,7 @@ function Profile() {
                   <td>{e.empno}</td>
                  
                   <td>
-                    <img src={e.photo} />
+                    <img src={e.photo} alt={"profilepic"} />
                   </td>
 
                   <td>{e.ename}</td>
